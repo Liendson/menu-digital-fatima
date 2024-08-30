@@ -1,0 +1,107 @@
+@font-face {
+    font-family: 'PoppinsMedium';
+    src: url('../fonts/Poppins-Medium.otf');
+}
+
+@font-face {
+    font-family: 'PoppinsRegular';
+    src: url('../fonts/Poppins-Regular.otf');
+}
+
+
+/* TABLETS E CELULARES (col) 0 A 767px*/
+@media (max-width: 767px) {
+
+    .title {
+        font-size: 30px;
+    }
+
+    .container-menu {
+        overflow-x: auto;
+        overflow-y: hidden;
+        display: flex;
+        padding-bottom: 15px;
+    }
+
+}
+
+/* CRIANDO VARIÁVEIS DE CORES A SEREM UTILIZADAS NA PALETA*/
+:root {
+    --color-background: #212121;
+    --color-text: #e8e8e8;
+    --color-text-out: #90908e;
+    --color-primary: #f6d35f;
+    --color-secondary: #f6d35f;
+    --color-white: #e8e8e8;
+    --color-separate: #cccccc;
+}
+
+/* CONFIGURANDO TIPO E COR DA FONTE */
+html, body {
+    font-family: 'PoppinsRegular', 'Rubik', sans-serif !important;
+    background-color: var(--color-background) !important;
+    color: var(--color-text) !important;
+ }
+
+b {
+    font-family: 'PoppinsMedium', 'Rubik', sans-serif;
+}
+
+.color-primary {
+    color: var(--color-primary);
+}
+
+.btn-sm {
+    padding: 9px 15px!important;
+    border-radius: 15px!important;
+    font-size: 18px;
+}
+
+.card {
+    border-radius: 20px;
+    padding: 15px 20px;
+    font-size: 20px;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1)!important;
+    border: none!important;
+}
+
+.hint-title {
+    color: var(--color-primary);
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+title {
+    color: var(--color-white);
+    font-size: 40px;
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
+
+.card-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-text {
+    color: var(--color-text-out);
+    font-size: 15px;
+}
+
+.card-text p {
+    font-size: 22px;
+    color: var(--color-white);
+    margin-bottom: 10px;
+}
+
+.img-padrao {
+    width: 10em;
+    border-radius: 3em;
+    box-shadow: rgb(175 181 173 / 10%) 2em 2em 2em 0;
+}
+
+.principal {
+    padding-top: 3em;
+}
